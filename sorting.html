@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>sorting an array in JS</h2>
+        <button onclick="asc()">Ascending order</button>
+        <button onclick="dsc()">Descending order</button>
+        <p id="result"></p>
+
+        <script>
+            var arr=[45,23,69,25,42,53,72,15,63,15,83,17,95,35,47];
+            document.getElementById("result").innerHTML=arr;
+
+            function asc(){
+                arr.sort(function(a,b){return a-b});
+                document.getElementById("result").innerHTML=arr;
+
+          }
+          function dsc(){
+            arr.sort(function(a,b){return b-a});
+            document.getElementById("result").innerHTML=arr;
+
+          }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Click the button to evaluate javascript</p>
+        <button onclick="calculate()">Press ME</button>
+        <p id="demo"></p>
+        <script>
+            function calculate(){
+                var a=24;
+                var b=35;
+                var x=eval("a+b")+"<br>";
+                var y=eval("a*b")+"<br>";
+                var z=eval("b-a")+"<br>";
+
+                var res=x+y+z; //concatenates the string
+                document.getElementById("demo").innerHTML=res;
+            }
+        </script>
+    </body>
+</html>
