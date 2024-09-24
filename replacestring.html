@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>String Method</h1>
+        <p> The string() This method can convert a number to a string. </p>  
+        <p>Search a string for "doing", display the position of the match and 
+            replace the word "how are" with "how are you" and display.
+        </p>
+        <p id="search_result"></p>
+        <p id="replace_result"></p>
+        <p id="string_result"></p>
+
+        <script>
+            var str="hello how are doing for the day";
+            var search_position=str.search("doing");
+            var txt=str.replace("how are", "How is your day");
+            var x=70;
+            var y=90;
+            document.getElementById("search_result").innerHTML=search_position;
+            document.getElementById("replace_result").innerHTML=txt;
+
+            document.getElementById("string_result").innerHTML=String(x)+String(y);
+            //does not add because it is a string so it needs to be joined or contained.
+        </script>
+    </body>
+</html>
