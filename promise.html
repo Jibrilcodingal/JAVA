@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript promises</h2>
+        <h1 id="result"></h1>
+        <script>
+            function displayer (sum)
+            {
+                document.getElementById("result").innerHTML=sum;
+            }
+            function sumation (a,b)
+            {
+                var add=a+b;
+                displayer(add);
+            }
+            let mypromise= new Promise((resolve, reject) => {
+                let x=0;
+                if (x==0){
+                    resolve("ok");
+                }else{
+                    reject("error");
+                }
+            });
+            mypromise.then(
+                function(value){sumation (24,32);},
+                function(error){sumation (error);}
+            
+            );
+
+
+        </script>
+    </body>
+</html>

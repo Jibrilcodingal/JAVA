@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript async</h2>
+        <h1 id="result"></h1>
+        <script> 
+            async function add(a,b) {
+                let response= await a+b;
+                display(response);
+}
+function display(sum) {
+    document.getElementById("result").innerHTML=sum;
+}
+add(24,59);
+        </script>
+    </body>
+</html>
