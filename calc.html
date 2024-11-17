@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <title>Calculator</title>
+    
+    <meta name="description" content="" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="calc.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <h1>Calculator</h1>
+                <div class="row">
+                    <input type="text" name="result" class="result" id="result" value=""
+                    placeholder="result" readonly />
+
+                    <input type="button" value="+" onclick="setscreenvalue('+')"/>
+                    <input type="button" value="1" onclick="setscreenvalue('1')"/>
+                    <input type="button" value="2" onclick="setscreenvalue('2')"/>
+                    <input type="button" value="3" onclick="setscreenvalue('3')"/>
+                    <input type="button" value="-" onclick="setscreenvalue('-')"/>
+                </div>
+
+                <div class="row">
+                    <input type="button" value="4" onclick="setscreenvalue('4')"/>
+                    <input type="button" value="5" onclick="setscreenvalue('5')"/>
+                    <input type="button" value="6" onclick="setscreenvalue('6')"/>
+                    <input type="button" value="*" onclick="setscreenvalue('*')"/>
+                </div>
+
+                <div class="row">
+                    <input type="button" value="7" onclick="setscreenvalue('7')"/>
+                    <input type="button" value="8" onclick="setscreenvalue('8')"/>
+                    <input type="button" value="9" onclick="setscreenvalue('9')"/>
+                    <input type="button" value="/" onclick="setscreenvalue('/')"/>
+                </div>
+
+                <div class="row">
+                    <input type="button" value="5" onclick="setscreenvalue('%')"/>
+                    <input type="button" value="0" onclick="setscreenvalue('0')"/>
+                    <input type="button" value="." class="dot" onclick="setscreenvalue('.')"/>
+                    <input type="button" value="=" onclick="calculateresult()"/>
+
+                </div>
+
+                <div class="row">
+                    <input type="button" value="CLEAR" onclick="clearscreen()"
+                    id="clear" class="clear-button"/>
+
+                </div>
+            </div>
+        </div>
+        <script src="calc.js"></script>
+    </body>
+    </html>
+    
